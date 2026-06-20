@@ -156,4 +156,10 @@ Output: [correct, partial_error, major_error]
 - [ ] Integración con wearables
 - [ ] Modelo de recomendación de correcciones
 
+## 👤 Autor
+
+- 👤 Autor : **César Adrián Delgado Díaz**
+- 💼 LinkedIn: [linkedin.com/in/cesar-delgado-diaz](linkedin.com/in/cesar-delgado-diaz)
+- 🐙 GitHub: [github.com/cesar530](https://github.com/cesar530)
+
 ---
