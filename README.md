@@ -35,36 +35,23 @@ Sistema de **Computer Vision** que detecta y analiza la ejecución de ejercicios
 | **Matplotlib** | Visualizaciones |
 
 ## 📁 Estructura del Proyecto
-
+```
 02_Detecto_Ejecucion_CV
-
 ├── exercise_form_detector.ipynb   # Notebook principal con demo completa
-
 ├── exercise_detector.py           # Clase principal del detector
-
 ├── utils.py                       # Funciones auxiliares
-
 ├── requirements.txt               # Dependencias
-
 ├── README.md                      # Documentación
-
 ├── .gitignore                     # Archivos ignorados
-
 |── models/                        # Modelos entrenados (generado)
-
 │   └── exercise_classifier.h5
-
 │
-
 ├── data/                          # Datos de entrenamiento (generado)
-
 │   ├── raw/
-
 │   └── processed/
-
 │
-
 └── output/                        # Videos procesados (generado)
+```
 
 ## ⚙️ Instalación
 
@@ -135,34 +122,23 @@ El sistema evalúa los siguientes aspectos por ejercicio:
 | Barra | Cerca del cuerpo | Barra alejada |
 
 ## 🧠 Arquitectura del Modelo
-
+```
 Input: 33 landmarks (x, y, z, visibility) = 132 features
-
     │
     ▼
-
 ┌─────────────────────────────────┐
-
 │  Dense(256, ReLU) + Dropout(0.3)│
-
 ├─────────────────────────────────┤
-
 │  Dense(128, ReLU) + Dropout(0.3)│
-
 ├─────────────────────────────────┤
-
 │  Dense(64, ReLU)                │
-
 ├─────────────────────────────────┤
-
 │  Dense(3, Softmax)              │
-
 └─────────────────────────────────┘
-
     │
     ▼
-
 Output: [correct, partial_error, major_error]
+```
 
 ## 📈 Resultados
 
@@ -179,9 +155,5 @@ Output: [correct, partial_error, major_error]
 - [ ] Tracking de progreso histórico
 - [ ] Integración con wearables
 - [ ] Modelo de recomendación de correcciones
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
